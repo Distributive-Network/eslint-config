@@ -1,0 +1,28 @@
+{
+  "name": "@dcp/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The ESLint Shareable Configuration used when contributing to DCP",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "homepage": "https://gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config#readme",
+  "bugs": {
+    "url": "https://gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": "7.30.0"
+  }
+}
