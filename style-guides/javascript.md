@@ -37,7 +37,7 @@ return exports;  /* replace exports object */
 ```
 **Do not use: exports object replacement via assignment**
 ```javascript
-module.exports { some_new_object };  /* replace exports object */
+module.exports = { some_new_object };  /* replace exports object */
 ```
 
 ### Exports Object Decoration
