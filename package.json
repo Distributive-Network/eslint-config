@@ -1,22 +1,21 @@
 {
-  "name": "@dcp/eslint-config",
+  "name": "@kingsds/eslint-config",
   "version": "1.0.0",
-  "private": true,
-  "description": "The ESLint Shareable Configuration used when contributing to DCP",
+  "description": "The ESLint Shareable Configuration used at Kings Distributed Systems when contributing to DCP.",
   "keywords": [
     "eslint",
     "eslint-config",
     "eslintconfig"
   ],
-  "homepage": "https://gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config#readme",
+  "homepage": "https://github.com/Kings-Distributed-Systems/eslint-config#readme",
   "bugs": {
-    "url": "https://gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config/issues"
+    "url": "https://github.com/Kings-Distributed-Systems/eslint-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/Distributed-Compute-Protocol/dcp-eslint-config.git"
+    "url": "git+https://github.com/Kings-Distributed-Systems/eslint-config.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "",
   "main": ".eslintrc.js",
   "scripts": {
