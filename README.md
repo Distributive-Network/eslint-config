@@ -1,4 +1,9 @@
-# KDS JavaScript Style Guide
+# @kingsds/eslint-config
+
+The ESLint Shareable Configuration used at Kings Distributed Systems when contributing to DCP.
+
+For the style guide used to derive this config, refer to
+[this Markdown file](https://gitlab.com/Distributed-Compute-Protocol/dcp-private-docs/-/blob/develop/style-guides/javascript.md).*emphasized text***KDS JavaScript Style Guide
 
 This document is an incomplete draft of a proposed style guide for JavaScript written at KDS.
 
@@ -74,9 +79,10 @@ exports.b = function b() {};
  - parentheses are neither followed by nor preceded by inner spaces
  - `if`, `for`, and `function` keywords are always followed by a space
 
-```javscript
+```javascript
 if ((a + b) > (c + d))  
 {  
+{
   print("Hello, world");  
 }
 ```
@@ -281,7 +287,7 @@ Long expressions not joined by `&&` and `||` should break so the operator starts
 
 Unary keyword operators, such as `typeof`, should not have their operand parenthesized; e.g. use `typeof 'foo' === 'string'`.
 
-### Type Coersion
+### Type Coerscion
 Types should be coerced as explicitly as possible
  - avoid use of `==` and friends, use `===` etc
  - if `==` must be used for a coerced comparison, a comment is probably warranted.
@@ -336,9 +342,11 @@ Never count on automatic hoisting of functions declared in block-level statement
 ```javascript
 exports.getGroups = function (x)  
 {  
+{
   var query = { success: returnData, error: cbFailure, method: "get", table: "Token" };  
   query.prototype = {value: x[index]};  
   
+
   for (let index = 0; index < x.length; index++)
   {  
     function cbFailure(res) { }  
@@ -346,6 +354,7 @@ exports.getGroups = function (x)
     db.act(query);  
   }  
 }  
+}
 ```  
 
 ### Files
@@ -387,5 +396,5 @@ async function main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjgzODE5N119
+eyJoaXN0b3J5IjpbLTkzODAxOTQzNSwxODc2ODM4MTk3XX0=
 -->
