@@ -13,13 +13,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kings-Distributed-Systems/eslint-config.git"
+    "url": "https://github.com/Kings-Distributed-Systems/eslint-config.git"
   },
   "license": "MIT",
   "author": "",
   "main": ".eslintrc.js",
   "scripts": {
+    "lint": "eslint --cache .",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.30.0",
+    "husky": "^7.0.0",
+    "lint-staged": "11.0.1"
   },
   "peerDependencies": {
     "eslint": "7.30.0"
