@@ -1,4 +1,9 @@
-# KDS JavaScript Style Guide
+# @kingsds/eslint-config
+
+The ESLint Shareable Configuration used at Kings Distributed Systems when contributing to DCP.
+
+For the style guide used to derive this config, refer to
+[this Markdown file](https://gitlab.com/Distributed-Compute-Protocol/dcp-private-docs/-/blob/develop/style-guides/javascript.md).*emphasized text***KDS JavaScript Style Guide
 
 This document is an incomplete draft of a proposed style guide for JavaScript written at KDS.
 
@@ -386,3 +391,6 @@ async function main()
   }
 }
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMzODYxODE1XX0=
+-->
