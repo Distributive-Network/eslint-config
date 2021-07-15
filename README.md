@@ -74,7 +74,7 @@ exports.b = function b() {};
  - parentheses are neither followed by nor preceded by inner spaces
  - `if`, `for`, and `function` keywords are always followed by a space
 
-```javscript
+```javascript
 if ((a + b) > (c + d))
 {
   print("Hello, world");
@@ -281,7 +281,7 @@ Long expressions not joined by `&&` and `||` should break so the operator starts
 
 Unary keyword operators, such as `typeof`, should not have their operand parenthesized; e.g. use `typeof 'foo' === 'string'`.
 
-### Type Coersion
+### Type Coercion
 Types should be coerced as explicitly as possible
  - avoid use of `==` and friends, use `===` etc
  - if `==` must be used for a coerced comparison, a comment is probably warranted.
@@ -386,6 +386,3 @@ async function main()
   }
 }
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzczNDM0NDgyXX0=
--->
