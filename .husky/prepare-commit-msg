@@ -1,4 +1,11 @@
 #!/bin/sh
+# shellcheck disable=SC1090
 . "$(dirname "$0")/_/husky.sh"
 
-exec </dev/tty && node_modules/.bin/cz --hook || true
+# To prevent getting "cannot open /dev/tty: No such device or address"
+if [ -z "$GITHUB_ACTIONS" ]; then
+  # shellcheck disable=SC2015
+  exec </dev/tty &&
+    node_modules/.bin/cz --hook ||
+    true
+fi
