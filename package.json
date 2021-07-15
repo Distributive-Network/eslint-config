@@ -1,6 +1,6 @@
 {
   "name": "@kingsds/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "The ESLint Shareable Configuration used at Kings Distributed Systems when contributing to DCP.",
   "keywords": [
     "eslint",
@@ -21,16 +21,20 @@
   "scripts": {
     "lint": "eslint --cache .",
     "prepare": "husky install",
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.30.0",
     "husky": "^7.0.0",
-    "lint-staged": "11.0.1"
+    "lint-staged": "11.0.1",
+    "semantic-release": "^17.4.4"
   },
   "peerDependencies": {
     "eslint": "7.30.0"
