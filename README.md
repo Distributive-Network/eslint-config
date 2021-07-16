@@ -164,7 +164,7 @@ else
 ```
 
 ### Object Literals
-Literal Braces. Very short objects may appear on a single line. Trailing commas in property lists are allowed by not required.
+Literal Braces. Very short objects may appear on a single line. Trailing commas in property lists are allowed but not required.
 ```javascript
 var ballDuck = {
   type: 'base',
@@ -391,6 +391,6 @@ async function main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzQ5OTk0NiwtOTM4MDE5NDM1LDE4Nz
-Y4MzgxOTddfQ==
+eyJoaXN0b3J5IjpbMTQ3OTU1MDYwMCwtNjc3NDk5OTQ2LC05Mz
+gwMTk0MzUsMTg3NjgzODE5N119
 -->
