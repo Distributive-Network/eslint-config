@@ -1,19 +1,19 @@
 {
   "name": "@kingsds/eslint-config",
   "version": "0.0.0-development",
-  "description": "The ESLint Shareable Configuration used at Kings Distributed Systems when contributing to DCP.",
+  "description": "The shareable ESLint configuration used at Distributive when contributing to the Distributive Compute Protocol (DCP).",
   "keywords": [
     "eslint",
     "eslint-config",
     "eslintconfig"
   ],
-  "homepage": "https://github.com/Kings-Distributed-Systems/eslint-config#readme",
+  "homepage": "https://github.com/Distributive-Network/eslint-config#readme",
   "bugs": {
-    "url": "https://github.com/Kings-Distributed-Systems/eslint-config/issues"
+    "url": "https://github.com/Distributive-Network/eslint-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kings-Distributed-Systems/eslint-config.git"
+    "url": "https://github.com/Distributive-Network/eslint-config.git"
   },
   "license": "MIT",
   "author": "",
@@ -21,22 +21,25 @@
   "scripts": {
     "lint": "eslint --cache .",
     "prepare": "husky install",
-    "semantic-release": "semantic-release",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.2.0",
-    "@commitlint/config-conventional": "17.2.0",
-    "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/git": "10.0.1",
-    "commitizen": "4.2.5",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.30.0",
-    "husky": "^8.0.1",
-    "lint-staged": "13.0.3",
-    "semantic-release": "^19.0.3"
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "semantic-release": "^21.0.1"
   },
   "peerDependencies": {
-    "eslint": "7.30.0"
+    "eslint": ">=8"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
   }
 }

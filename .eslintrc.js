@@ -1,18 +1,9 @@
-/** @type {import('eslint').Linter.Config} */
+/**
+ * @type {import('eslint').Linter.Config}
+ */
+// eslint-disable-next-line no-undef
 module.exports = {
-  'env': {
-    'browser': true,
-    'commonjs': true,
-    'es2021': true,
-    'node': true
-  },
   'extends': 'eslint:recommended',
-  'parserOptions': {
-    'ecmaVersion': 12
-  },
-  globals: {
-    dcpConfig: true
-  },
   'rules': {
     'indent': [
       'warn',
