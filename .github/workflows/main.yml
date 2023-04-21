@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Semantic Release
 
 # Controls when the workflow will run
 on:
@@ -19,15 +19,16 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
-      - name: Prepare package for publish
-        run: |
-          npm ci
       - name: Release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          # For publishing the package to npm.
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run semantic-release
+          # For publishing releases & commenting PRs/issues.
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
