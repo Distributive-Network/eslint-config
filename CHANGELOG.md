@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Distributive-Network/eslint-config/compare/v1.0.1...v1.0.2) (2023-04-23)
+
+
+### Bug Fixes
+
+* **npm:** enable installing w/ looser peer dep on eslint ([2a2e4b7](https://github.com/Distributive-Network/eslint-config/commit/2a2e4b7dd31ea84bdac5a489c0258522502b176d))
+
 ## [1.0.1](https://github.com/Kings-Distributed-Systems/eslint-config/compare/v1.0.0...v1.0.1) (2021-07-16)
 
 # 1.0.0 (2021-07-16)
