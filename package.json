@@ -41,5 +41,9 @@
   "engines": {
     "node": ">=18",
     "npm": ">=9"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
