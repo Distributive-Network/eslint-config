@@ -27,8 +27,8 @@ module.exports = {
       '@semantic-release/github',
       {
         // Avoid an API rate limit error.
-        successComment: false,
-        failTitle: false,
+        success: false,
+        fail: false,
       },
     ],
   ],
