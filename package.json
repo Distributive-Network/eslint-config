@@ -16,7 +16,7 @@
     "url": "https://github.com/Distributive-Network/eslint-config.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "Wes Garland <wes@distributive.network>",
   "files": [
     ".eslintrc.js"
   ],
