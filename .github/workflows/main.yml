@@ -1,34 +1,45 @@
-# This is a basic workflow to help you get started with Actions
+# Run semantic-release on the default branch to publish the package.
+name: Release
 
-name: Semantic Release
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-  pull_request:
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - main
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  # For checkout.
+  contents: read
+
 jobs:
   release:
-    # The if statement checks the github.ref context to determine the current
-    # branch name; if the name is refs/heads/main, then the subsequent steps are
-    # executed.
-    if: github.ref == 'refs/heads/main'
+    name: Release
     runs-on: ubuntu-latest
+    permissions:
+      # To be able to publish a GitHub release.
+      contents: write
+      # To be able to comment on released issues.
+      issues: write
+      # To be able to comment on released pull requests.
+      pull-requests: write 
+      # To enable use of OIDC for npm provenance.
+      id-token: write 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node.js environment
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
       - name: Release
         env:
           # For publishing the package to npm.
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           # For publishing releases & commenting PRs/issues.
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
