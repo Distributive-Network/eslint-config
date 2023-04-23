@@ -4,5 +4,5 @@
 
 # To prevent commitlint failing commits made by semantic-release
 if [ -z "$GITHUB_ACTIONS" ]; then
-  npx --no-install commitlint --edit "$1"
+  npx --no -- commitlint --edit "$1"
 fi
