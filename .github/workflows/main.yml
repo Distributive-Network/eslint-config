@@ -28,6 +28,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          # To allow pushing to protected branches requiring approvals.
+          token: ${{ secrets.CI_GITHUB_TOKEN }}
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -42,4 +44,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           # For publishing releases & commenting PRs/issues.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        run: npx --no -- semantic-release
