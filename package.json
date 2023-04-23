@@ -1,5 +1,5 @@
 {
-  "name": "@distributive/eslint-config",
+  "name": "@kingsds/eslint-config",
   "version": "0.0.0-development",
   "description": "The shareable ESLint configuration used at Distributive when contributing to the Distributive Compute Protocol (DCP).",
   "keywords": [
