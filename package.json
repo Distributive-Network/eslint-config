@@ -17,7 +17,9 @@
   },
   "license": "MIT",
   "author": "",
-  "main": ".eslintrc.js",
+  "files": [
+    ".eslintrc.js"
+  ],
   "scripts": {
     "lint": "eslint --cache .",
     "prepare": "husky install",
