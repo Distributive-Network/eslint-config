@@ -46,7 +46,7 @@ module.exports = {
       'warn',
     ],
     'brace-style': [
-      'error', 'allman', { 'allowSingleLine': true }
+      'off',
     ],
     'no-eval': [
       'error',
