@@ -1,8 +1,0 @@
-#!/bin/sh
-# shellcheck disable=SC1090
-. "$(dirname "$0")/_/husky.sh"
-
-# To prevent commitlint failing commits made by semantic-release
-if [ -z "$GITHUB_ACTIONS" ]; then
-  npx --no -- commitlint --edit "$1"
-fi

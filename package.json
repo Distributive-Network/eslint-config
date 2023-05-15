@@ -1,6 +1,6 @@
 {
   "name": "@kingsds/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.0.3",
   "description": "The shareable ESLint configuration used at Distributive when contributing to the Distributive Compute Protocol (DCP).",
   "keywords": [
     "eslint",
@@ -20,21 +20,7 @@
   "files": [
     ".eslintrc.js"
   ],
-  "scripts": {
-    "lint": "eslint --cache .",
-    "prepare": "husky install",
-    "semantic-release": "semantic-release"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "eslint": "^8.39.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
-    "semantic-release": "^21.0.2"
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": ">=8"
   },
