@@ -13,22 +13,25 @@ module.exports = {
       2,
       {
         'SwitchCase': 1,
-        'ignoredNodes': ['CallExpression']
+        'ignoredNodes': ['CallExpression', 'ForStatement']
       }
     ],
     'linebreak-style': [
       'error',
       'unix'
     ],
+    'quotes': [
+      'warn',
+      'single'
+    ],
     'func-call-spacing': [
-      'warn', 'never'
+      'off', 'never'
     ],
     'no-prototype-builtins': 'off',
-    'quotes': ['warn', 'single', 'avoid-escape'],
     'no-unused-vars': ['warn', { 'vars': 'all', 'args': 'none', 'ignoreRestSiblings': false }],
     'no-empty': [ 'warn' ],
     'no-trailing-spaces': [
-      'warn', {
+      'off', {
         skipBlankLines: true,
         ignoreComments: true
       }
@@ -88,7 +91,19 @@ module.exports = {
     'no-label-var':             [ 'error' ],
     'radix':                    [ 'error' ],
     'no-self-compare':          [ 'error' ],
-    'no-implicit-coercion':     [ 'error' ],
+    'require-await':            [ 'error'],
+    'require-yield':            [ 'error' ],
+    'no-promise-executor-return':       [ 'off' ],
+    'no-template-curly-in-string':      [ 'warn' ],
+    'no-unmodified-loop-condition':     [ 'warn' ],
+    'no-unused-private-class-members':  [ 'warn' ],
+    'no-implicit-coercion': [1, {
+      disallowTemplateShorthand: false,
+      boolean: true,
+      number: true,
+      string: true,
+      allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
+    }],
     'distributive/brace-style': 'warn'
   }
 }
