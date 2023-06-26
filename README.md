@@ -1,8 +1,8 @@
-# KDS JavaScript Style Guide
+# Distributive JavaScript Style Guide
 
-This document is an incomplete draft of a proposed style guide for JavaScript written at KDS.
+This document is an incomplete draft of a proposed style guide for JavaScript written at Distributive.
 
-Last Updated: July 2021
+Last Updated: June 2023
 
 ## Cardinal Rules
 
@@ -86,7 +86,7 @@ if ((a + b) > (c + d))
 
  - File names are `kebab-case`.
  - Variable names and object property names are `camelCase`
- - Acronyms are treated like words; if we had named `window.XMLHttpRequest` at KDS, it would have been called `window.xmlHttpRequest`.
+ - Acronyms are treated like words; if we had named `window.XMLHttpRequest` at Distributive, it would have been called `window.xmlHttpRequest`.
  - Class names are `CamelCaseWithUppercaseFirstCharacter`
  - Function arguments that are unused should start with _
  - "private" API or object properties should start with __
@@ -112,7 +112,7 @@ Upper case and lower case are each two words.
 
 ## Braces
 
-There are two bracing styles in use simultaneously throughout the KDS JS Style:
+There are two bracing styles in use simultaneously throughout the Distributive JS Style:
 
  - Lexical braces: always alone on a line. "Allman Style"
  - Literal braces: never alone on a line; closing braces always followed by  `,`, `)`, or `;`. "1tbs Style".
