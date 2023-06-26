@@ -4,6 +4,9 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   'extends': 'eslint:recommended',
+  'plugins': [
+    'distributive'
+  ],
   'rules': {
     'indent': [
       'warn',
@@ -86,5 +89,6 @@ module.exports = {
     'radix':                    [ 'error' ],
     'no-self-compare':          [ 'error' ],
     'no-implicit-coercion':     [ 'error' ],
+    'distributive/brace-style': 'warn'
   }
 }
