@@ -2,6 +2,7 @@
  * @type {import('eslint').Linter.Config}
  */
 // eslint-disable-next-line no-undef
+/* eslint strict: 'off' */
 module.exports = {
   'env': {
     'browser': true,
@@ -12,7 +13,7 @@ module.exports = {
   'extends': 'eslint:recommended',
   'parserOptions': {
     'ecmaVersion': 13,
-    sourceType: 'script',
+    'sourceType': 'script',
   },
   globals: {
     dcpConfig: true
@@ -117,6 +118,7 @@ module.exports = {
       string: true,
       allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
     }],
+    'strict':                   [ 'error', 'safe' ],
     'distributive/brace-style': 'warn'
   }
 }
