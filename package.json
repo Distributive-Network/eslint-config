@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "author": "Wes Garland <wes@distributive.network>",
+  "main": ".eslintrc.js",
   "files": [
     ".eslintrc.js"
   ],
