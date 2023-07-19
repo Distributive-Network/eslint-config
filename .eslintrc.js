@@ -1,8 +1,8 @@
+'use strict';
+
 /**
  * @type {import('eslint').Linter.Config}
  */
-// eslint-disable-next-line no-undef
-/* eslint strict: 'off' */
 module.exports = {
   'env': {
     'browser': true,

@@ -23,7 +23,8 @@
   ],
   "scripts": {},
   "peerDependencies": {
-    "eslint": ">=8"
+    "eslint": ">=8",
+    "eslint-plugin-distributive": "github:Distributive-Network/eslint-plugin-distributive"
   },
   "engines": {
     "node": ">=16",
@@ -32,8 +33,5 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "devDependencies": {
-    "eslint-plugin-distributive": "github:Distributive-Network/eslint-plugin-distributive"
   }
 }
