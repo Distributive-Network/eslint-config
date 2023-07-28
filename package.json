@@ -24,7 +24,7 @@
   "scripts": {},
   "peerDependencies": {
     "eslint": ">=8",
-    "eslint-plugin-distributive": "github:Distributive-Network/eslint-plugin-distributive"
+    "eslint-plugin-distributive": "@distributive/eslint-plugin"
   },
   "engines": {
     "node": ">=16",
