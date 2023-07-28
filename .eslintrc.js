@@ -119,6 +119,6 @@ module.exports = {
       allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
     }],
     'strict':                   [ 'error', 'safe' ],
-    'distributive/brace-style': 'warn'
+    '@distributive/brace-style': 'warn'
   }
 }
