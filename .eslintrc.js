@@ -19,7 +19,7 @@ module.exports = {
     dcpConfig: true
   },
   'plugins': [
-    'distributive'
+    '@distributive'
   ],
   'rules': {
     'indent': [
