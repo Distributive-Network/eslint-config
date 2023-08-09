@@ -23,8 +23,8 @@
   ],
   "scripts": {},
   "peerDependencies": {
-    "eslint": ">=8",
-    "eslint-plugin-distributive": "@distributive/eslint-plugin"
+    "@distributive/eslint-plugin": "^1.0.0",
+    "eslint": ">=8"
   },
   "engines": {
     "node": ">=16",
