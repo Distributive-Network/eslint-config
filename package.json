@@ -23,6 +23,7 @@
   ],
   "scripts": {},
   "peerDependencies": {
+    "@distributive/eslint-plugin": "^1.0.0",
     "eslint": ">=8"
   },
   "engines": {
