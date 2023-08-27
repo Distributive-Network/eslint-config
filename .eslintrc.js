@@ -1,3 +1,11 @@
+/**
+ * @file    .eslintrc.js - ESLint configuration file, following Distributive's
+ *          JS Style Guide.
+ *
+ * @author  Wes Garland <wes@distributive.network>
+ * @date    Mar. 2022
+ */
+
 'use strict';
 
 /**
