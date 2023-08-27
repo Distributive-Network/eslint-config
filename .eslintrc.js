@@ -19,7 +19,8 @@ module.exports = {
     dcpConfig: true
   },
   'plugins': [
-    '@distributive'
+    '@distributive',
+    'jsdoc',
   ],
   'rules': {
     'indent': [
@@ -119,6 +120,42 @@ module.exports = {
       allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
     }],
     'strict':                   [ 'error', 'safe' ],
-    '@distributive/brace-style': 'warn'
-  }
-}
+    '@distributive/brace-style': 'warn',
+    'jsdoc/require-file-overview': [
+      'error', {
+        tags: {
+          file: {
+            initialCommentsOnly: true,
+            mustExist: true,
+            preventDuplicates: true,
+          },
+          author: {
+            mustExist: true,
+          },
+          date: {
+            mustExist: true,
+            preventDuplicates: true,
+          },
+        },
+      },
+    ],
+    'jsdoc/require-jsdoc': [
+      'error', {
+        publicOnly: true,
+        require: {
+          ArrowFunctionExpression: true,
+          ClassDeclaration: true,
+          ClassExpression: true,
+          FunctionDeclaration: true,
+          FunctionExpression: true,
+          MethodDefinition: true,
+        },
+      },
+    ],
+    'jsdoc/require-description': [
+      'error', {
+        exemptedBy: ['type', 'typedef'],
+      },
+    ],
+  },
+};
