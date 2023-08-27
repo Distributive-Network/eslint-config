@@ -20,11 +20,8 @@ module.exports = {
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
-    'ecmaVersion': 13,
+    'ecmaVersion': 'latest',
     'sourceType': 'script',
-  },
-  globals: {
-    dcpConfig: true
   },
   'plugins': [
     '@distributive',
@@ -33,8 +30,7 @@ module.exports = {
   'rules': {
     'indent': [
       'warn',
-      2,
-      {
+      2, {
         'SwitchCase': 1,
         'ignoredNodes': ['CallExpression', 'ForStatement']
       }
@@ -62,9 +58,6 @@ module.exports = {
     'no-multi-spaces': [
       'off',
     ],
-    'prettier/prettier': [
-      'off',
-    ],
     'vars-on-top': [
       'error',
     ],
@@ -73,9 +66,6 @@ module.exports = {
     ],
     'spaced-comment': [
       'warn',
-    ],
-    'brace-style': [
-      'off',
     ],
     'no-eval': [
       'error',
@@ -128,6 +118,7 @@ module.exports = {
       allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
     }],
     'strict':                   [ 'error', 'safe' ],
+    'brace-style': 'off',
     '@distributive/brace-style': 'warn',
     'jsdoc/require-file-overview': [
       'error', {
