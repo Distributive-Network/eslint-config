@@ -1,3 +1,11 @@
+/**
+ * @file    .eslintrc.js - ESLint configuration file, following Distributive's
+ *          JS Style Guide.
+ *
+ * @author  Wes Garland <wes@distributive.network>
+ * @date    Mar. 2022
+ */
+
 'use strict';
 
 /**
@@ -12,20 +20,17 @@ module.exports = {
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
-    'ecmaVersion': 13,
+    'ecmaVersion': 'latest',
     'sourceType': 'script',
   },
-  globals: {
-    dcpConfig: true
-  },
   'plugins': [
-    '@distributive'
+    '@distributive',
+    'jsdoc',
   ],
   'rules': {
     'indent': [
       'warn',
-      2,
-      {
+      2, {
         'SwitchCase': 1,
         'ignoredNodes': ['CallExpression', 'ForStatement']
       }
@@ -53,9 +58,6 @@ module.exports = {
     'no-multi-spaces': [
       'off',
     ],
-    'prettier/prettier': [
-      'off',
-    ],
     'vars-on-top': [
       'error',
     ],
@@ -64,9 +66,6 @@ module.exports = {
     ],
     'spaced-comment': [
       'warn',
-    ],
-    'brace-style': [
-      'off',
     ],
     'no-eval': [
       'error',
@@ -119,6 +118,43 @@ module.exports = {
       allow: ['!!'] /* really only want to allow if(x) and if(!x) but not if(!!x) */
     }],
     'strict':                   [ 'error', 'safe' ],
-    '@distributive/brace-style': 'warn'
-  }
-}
+    'brace-style': 'off',
+    '@distributive/brace-style': 'warn',
+    'jsdoc/require-file-overview': [
+      'error', {
+        tags: {
+          file: {
+            initialCommentsOnly: true,
+            mustExist: true,
+            preventDuplicates: true,
+          },
+          author: {
+            mustExist: true,
+          },
+          date: {
+            mustExist: true,
+            preventDuplicates: true,
+          },
+        },
+      },
+    ],
+    'jsdoc/require-jsdoc': [
+      'error', {
+        publicOnly: true,
+        require: {
+          ArrowFunctionExpression: true,
+          ClassDeclaration: true,
+          ClassExpression: true,
+          FunctionDeclaration: true,
+          FunctionExpression: true,
+          MethodDefinition: true,
+        },
+      },
+    ],
+    'jsdoc/require-description': [
+      'error', {
+        exemptedBy: ['type', 'typedef'],
+      },
+    ],
+  },
+};
