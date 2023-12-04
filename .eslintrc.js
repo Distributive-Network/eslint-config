@@ -27,6 +27,7 @@ module.exports = {
     '@distributive',
     '@stylistic',
     'jsdoc',
+    'unicorn',
   ],
   'rules': {
     '@distributive/brace-style': ['warn'],
@@ -91,6 +92,7 @@ module.exports = {
         exemptedBy: ['type', 'typedef'],
       },
     ],
+    'unicorn/no-invalid-remove-event-listener': ['error'],
     'no-prototype-builtins': 'off',
     'no-unused-vars': ['warn', { 'vars': 'all', 'args': 'none', 'ignoreRestSiblings': false }],
     'no-empty': [ 'warn' ],

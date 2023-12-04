@@ -26,7 +26,8 @@
     "@distributive/eslint-plugin": "^1.0.0",
     "@stylistic/eslint-plugin": ">=1",
     "eslint": ">=8.53",
-    "eslint-plugin-jsdoc": ">=46"
+    "eslint-plugin-jsdoc": ">=46",
+    "eslint-plugin-unicorn": ">=36"
   },
   "engines": {
     "node": ">=18",
