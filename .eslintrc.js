@@ -89,7 +89,7 @@ module.exports = {
     ],
     'jsdoc/require-description': [
       'error', {
-        exemptedBy: ['type', 'typedef'],
+        exemptedBy: ['inheritdoc', 'type', 'typedef', 'params', 'returns'],
       },
     ],
     'unicorn/no-invalid-remove-event-listener': ['error'],
