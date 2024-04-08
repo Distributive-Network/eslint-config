@@ -36,9 +36,14 @@ module.exports = {
     '@stylistic/indent': [
       'warn',
       2, {
-        'SwitchCase': 1,
-        'ignoredNodes': ['CallExpression', 'ForStatement']
-      }
+        SwitchCase: 1,
+        ignoredNodes: [
+          'CallExpression',
+          'ForStatement',
+          'ConditionalExpression',
+          'VariableDeclarator > ObjectPattern',
+        ],
+      },
     ],
     '@stylistic/linebreak-style': ['error', 'unix'],
     '@stylistic/no-extra-semi': ['warn'],
