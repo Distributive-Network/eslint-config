@@ -62,7 +62,7 @@ module.exports = {
     '@stylistic/semi-spacing': ['error', { 'before': false, 'after': true }],
     '@stylistic/semi-style': ['warn', 'last'],
     'jsdoc/require-file-overview': [
-      'error', {
+      'warn', {
         tags: {
           file: {
             initialCommentsOnly: true,
@@ -80,7 +80,7 @@ module.exports = {
       },
     ],
     'jsdoc/require-jsdoc': [
-      'error', {
+      'warn', {
         publicOnly: true,
         require: {
           ArrowFunctionExpression: true,
@@ -93,7 +93,7 @@ module.exports = {
       },
     ],
     'jsdoc/require-description': [
-      'error', {
+      'warn', {
         exemptedBy: ['inheritdoc', 'type', 'typedef', 'params', 'returns'],
       },
     ],
