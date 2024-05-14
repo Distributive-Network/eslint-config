@@ -124,7 +124,6 @@ module.exports = {
     'no-dupe-class-members':    [ 'warn' ],
     'no-fallthrough':           [ 'warn', { commentPattern: 'fall[ -]*through' }],
     'no-invalid-this':          [ 'error' ],
-    'no-return-assign':         [ 'error' ],
     'no-return-await':          [ 'warn' ],
     'no-unused-expressions':    [ 'warn', { allowShortCircuit: true, allowTernary: true } ],
     'prefer-promise-reject-errors': [ 'error' ],
