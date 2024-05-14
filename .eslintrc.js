@@ -56,7 +56,6 @@ module.exports = {
       },
     ],
     '@stylistic/object-curly-spacing': ['warn', 'always'],
-    '@stylistic/operator-linebreak': ['warn', 'before'],
     '@stylistic/quotes': ['warn', 'single'],
     '@stylistic/semi': ['off'], /* does not work right with exports.X = function allmanStyle */
     '@stylistic/semi-spacing': ['error', { 'before': false, 'after': true }],
