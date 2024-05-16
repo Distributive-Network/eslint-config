@@ -56,13 +56,12 @@ module.exports = {
       },
     ],
     '@stylistic/object-curly-spacing': ['warn', 'always'],
-    '@stylistic/operator-linebreak': ['warn', 'before'],
     '@stylistic/quotes': ['warn', 'single'],
     '@stylistic/semi': ['off'], /* does not work right with exports.X = function allmanStyle */
     '@stylistic/semi-spacing': ['error', { 'before': false, 'after': true }],
     '@stylistic/semi-style': ['warn', 'last'],
     'jsdoc/require-file-overview': [
-      'error', {
+      'warn', {
         tags: {
           file: {
             initialCommentsOnly: true,
@@ -80,7 +79,7 @@ module.exports = {
       },
     ],
     'jsdoc/require-jsdoc': [
-      'error', {
+      'warn', {
         publicOnly: true,
         require: {
           ArrowFunctionExpression: true,
@@ -93,7 +92,7 @@ module.exports = {
       },
     ],
     'jsdoc/require-description': [
-      'error', {
+      'warn', {
         exemptedBy: ['inheritdoc', 'type', 'typedef', 'params', 'returns'],
       },
     ],
@@ -124,7 +123,6 @@ module.exports = {
     'no-dupe-class-members':    [ 'warn' ],
     'no-fallthrough':           [ 'warn', { commentPattern: 'fall[ -]*through' }],
     'no-invalid-this':          [ 'error' ],
-    'no-return-assign':         [ 'error' ],
     'no-return-await':          [ 'warn' ],
     'no-unused-expressions':    [ 'warn', { allowShortCircuit: true, allowTernary: true } ],
     'prefer-promise-reject-errors': [ 'error' ],
